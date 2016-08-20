@@ -1,0 +1,46 @@
+html{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:10px;
+}
+
+h2{
+	font-size:2rem;
+}
+
+ul{
+	padding-left:2rem;
+}
+ul li{
+	padding-left:2rem;
+	list-style-type:none;
+	background-image:url(strengthsymbol.svg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-size:1.6rem 1.6rem;
+}
+ul,ol,dl,p{
+	font-size:1.5rem;
+	
+}
+
+li,p{
+	padding-left:2rem;
+	line-height:1.5rem;
+}
+ol{
+	padding-left:2rem;
+}
+ol li{
+	padding-left:2rem;
+}
+dd , dt{
+	
+	line-height:1.5rem;
+}
+dt{
+	font-weight:bold;
+}
+dd{
+	padding-left:2rem;
+	margin-bottom:1.5rem;
+}

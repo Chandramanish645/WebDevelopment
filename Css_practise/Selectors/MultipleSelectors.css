@@ -1,0 +1,56 @@
+table{
+	font: 1em sans-serif;
+	border-collapse:collapse;
+	border-spacing:0;
+	
+}
+/* All <td>s within a <table and all <th>s within a <table>
+   Comma is not a combinator, it just allows you to target
+   several selectors with the same CSS ruleset */
+table td , table th{
+	border: 1px solid black;
+	padding:0.5em 0.5em 0.4em;
+}
+
+
+/* th[scope="col"]{
+	background-color:black;
+	color:white;
+} */
+
+/* All <th>s within <thead>s that are within <table>s */
+table thead  th{
+	background-color:black;
+	color:white;
+}
+
+
+/* All pseudo-elements "before" <td>s that are a last child,
+   appearing within elements with a class of "with-currency" that
+   also have an attribute "lang" with the value "en-US" */
+.with-currency[lang="en-us"] tr>td:last-child::before{
+	content:'$';
+}
+.with-currency[lang="fr"] td:last-child::after{
+	content:' €';
+}
+table tbody tr td:last-child{
+	align:right;
+}
+
+table tfoot th{
+	text-align:right;
+	border-top-width:5px;
+	border-left:none;
+	border-bottom:none;
+}
+table tfoot td{
+	text-align:right;
+	border-top-width:5px;
+	background-color:black;
+	color:white;
+}
+
+table tbody td+td{
+	text-align:center;
+}

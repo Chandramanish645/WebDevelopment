@@ -1,0 +1,5 @@
+1> What is the difference between default, user and author style sheets?
+
+2> Diff between inherit , initial and unset --> www.quirksmode.org/css/cascading/values.html
+
+3> Disable back key on logout. ?

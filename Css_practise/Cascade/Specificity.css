@@ -1,0 +1,74 @@
+/* The first two selectors are competing over the styling of the link's background color — 
+the second one wins and makes the background color blue because it has an extra ID 
+selector in the chain: its score is 201 versus 101. */
+
+/* weight: 0101 */
+#outer a {
+  background-color: red;
+}
+
+/* weight: 0201 */
+#outer #inner a {
+  background-color: blue;
+}
+
+
+/* The third and fourth selectors are competing over the styling of the link's text color — 
+the second one wins and makes the text white because although it has one less element selector,
+the missing selector is swapped out for a class selector, which is worth ten rather than one.
+ So the winning score is 113 versus 104 */.
+/* weight: 0104 */
+#outer div ul li a {
+  color: yellow;
+}
+
+/* weight: 0113 */
+#outer div ul .nav a {
+  color: white;
+}
+
+/* Selectors 5–7 are competing over the styling of the link's border when hovered. 
+Selector six clearly loses to five with a score of 23 versus 24 — it has one fewer element selectors in the chain. 
+Selector seven, however, beats both five and six — it has the same number of sub-selectors in the chain as five, 
+but an element has been swapped out for a class selector. 
+So the winning score is 33 versus 23 and 24. 
+BUt if you give !important on 6th rule's border-style:dashed !important , this will be applied*/
+
+/* weight: 0024 */
+div div li:nth-child(2) a:hover {
+  border-width: 10px ;
+  border-style:solid;
+  border-color:black;
+}
+
+/* weight: 0023 */
+div li:nth-child(2) a:hover {
+  border-width: 10px ;
+  border-style:dashed !important;
+  border-color:black;
+}
+
+/* weight: 0033 */
+div div .nav:nth-child(2) a:hover {
+  border-width: 10px ;
+  border-style:double;
+  border-color:black;
+}
+
+a {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}

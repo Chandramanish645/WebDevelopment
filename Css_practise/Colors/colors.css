@@ -1,0 +1,27 @@
+.first{
+	background-color:red;
+	width:400px;
+	height:200px;
+	top:0;
+	left:100px;
+}
+.second{
+	background-color:green;
+	width:400px;
+	height:200px;
+	top:-150px;
+	left:50px;
+}
+.third{
+	background-color:hsla(240,100%,100%,0.5);
+	width:400px;
+	height:200px;
+	top:-290px;
+	left:25px;
+}
+.first,.second ,.third{
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:300%;
+}

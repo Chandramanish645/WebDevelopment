@@ -1,0 +1,29 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding:20px 100px;
+  border:1px solid black;
+}
+
+.right {
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+p,ul,ol,dl,address {
+  font-size: 1.1em;
+}
+
+p, li, dd, dt, address {
+  line-height: 1.5;
+}
+abbr{
+	text-decoration:underline;
+}

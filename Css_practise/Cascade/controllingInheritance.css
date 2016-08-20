@@ -1,0 +1,14 @@
+body{
+	color:green;
+}
+.inherit a{
+	color:inherit;
+}
+
+.initial a{
+	color:initial;
+}
+
+.unset a{
+	color:unset;
+}

@@ -1,0 +1,34 @@
+body{
+	font-size:20px;
+	
+}
+li{
+	display:inline;
+}
+a{
+	padding:5px;
+	line-height:3rem;
+	text-decoration:none;
+	color:black;
+}
+a:link ,a:visited , a:focus{
+	background-color:yellow;
+	
+}
+a:visited{
+	
+}
+a:focus{
+	
+}
+a:hover{
+	
+	background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+	background-size: 16px 16px;
+	padding-right: 19px;
+}
+a:active{
+	background-color:red;
+	text-decoration:underline;
+	color:white;
+}

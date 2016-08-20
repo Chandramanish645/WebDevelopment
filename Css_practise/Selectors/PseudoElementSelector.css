@@ -1,0 +1,16 @@
+[href^=www]::after{
+	content:'?';
+}
+p::first-letter{
+	float:left;
+	display:block;
+	border : 1px solid black;
+	font-size:3em;
+	background-color:red;
+	padding :2px;
+	margin:4px;
+}
+
+p::first-line{
+	text-transform:uppercase;
+}

@@ -1,0 +1,30 @@
+body{
+	marign:0;
+}
+#wrapper header{
+	
+}
+#wrapper footer{
+	margin-top:15px;
+}
+#wrapper main{
+	margin:30px;
+	padding:5%;
+	width:100%;
+	height:400px;
+}
+
+#wrapper *{
+	padding:20px;
+	font-size:20px;
+	border:20px solid rgba(0,0,0,0.5);
+	display:inline-block;
+}
+#wrapper header , #wrapper footer{
+	background-color:blue;
+	color:white;
+}
+
+#wrapper main{
+	background-color:yellow;
+}

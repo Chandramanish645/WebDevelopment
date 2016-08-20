@@ -1,0 +1,48 @@
+<html>
+<head>
+  
+
+<title>Example</title>
+    <script langauge="JavaScript" type="text/javascript">
+      function butCalculate_onClick(){
+          try{
+              if(window.top.calcFactorial==null){
+                  throw "This page is not loaded within the correct frameset";
+              }if(document.form1.txtNum1.value==" "){
+                  throw "!Please enter a value before you calculate its factorial";
+              }if(isNAN(document.form1.txtNum1.value)){
+                  throw "!Please enter a valid number";
+              }if(document.form1.txtNum1.value<0){
+                  throw "!Please enter positive number";
+              }else{
+                  document.form1.txtResult.value= window.parent.calcFactorial(document.form1.txtNum1.value);
+              }
+          }catch(exception){
+              if(typeof(exception)=="string"){
+                  if(exception.charAt(0)=="!"){
+                      alert(exception.substr(1));
+                      document.form1.txtNum1.focus();
+                      document.form1.txtNum1.select();
+                  }else{
+                      alert(exception);
+                  }
+              }
+              else{
+                 
+                  alert("The following Error occured :-----   " + exception.message)
+              }
+          }
+      }
+      
+    </script>
+    
+</head>
+<body>
+    
+    <form action="" name="form1">
+    <input type="text" name="txtNum1" size="3"/> Factorial is
+    <input type="text" name="txtResult" size"25"/></br>
+    <input type="button" name="butCalculate" value="Calculate Factorial" onClick="butCalculate_onClick()"/>
+    </form>
+</body>
+</html>

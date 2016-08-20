@@ -1,0 +1,14 @@
+a{
+	color: blue;
+	font-style:bold;
+}
+
+a:visited{
+	color:Green;
+}
+a:hover,
+a:active,
+a:focus{
+	color:darkred;
+	text-decoration:none;
+}

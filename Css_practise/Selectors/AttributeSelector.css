@@ -1,0 +1,33 @@
+[data-vegetable]{
+	font-style:italic;
+	color:green;
+}
+/* [data-meat]{
+	color:red;
+} */
+
+[data-vegetable="liquid"]{
+	background-color:goldenrod;
+}
+
+[data-vegetable~="spicy"]{
+	color:red;
+	font-weight:bold;
+}
+
+[lang|=fr]{
+	font-weight:bold;
+	color: silver;
+}
+
+[data-quantity^="option"]{
+	opacity:"0.5";
+	border:5px solid black;
+	margin-bottom:5px;
+}
+[data-quantity$="kg"]{
+	font-weight: bold;
+}
+[data-quantity*="c"]{
+	font-family: cursive;
+}
