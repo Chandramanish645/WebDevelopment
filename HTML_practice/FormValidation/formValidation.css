@@ -1,0 +1,19 @@
+
+
+input:enabled{
+	background-color:black;
+	color:white
+} 
+
+/* input:focus{
+	background-color:#ff0000;
+} */
+
+input:checked{
+	height:20px;
+	width:20px;
+}
+
+input:invalid{
+	border: 2px solid red;
+}

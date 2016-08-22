@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Sign Up </title>
+		<link href="formValidation.css" rel="stylesheet"  />
+		<script src="formValidation.js"></script>
+	</head>
+	
+	<body>
+		<form name ="Singnup" action="#">
+			<table border="1" align ="center">
+				<tr>
+				<th colspan ="2"align ="center"> SIGNUP PAGE </th>
+				</tr>
+				
+				<tr>
+					<td>  Full Name  </td>
+					<td> <input type="text" name ="fname" required placeholder="first name"  /> </td> <!-- title ? -->
+				<tr>
+					<td>  Last Name  </td>
+					<td> <input type="text" name ="lname" required placeholder="last name" maxlength="15" autofocus/> </td>
+				</tr>
+				<tr>
+					<td>  Email Id  </td>
+					<td> <input type="email" name ="email_id" /> </td>
+				</tr>
+				<tr>
+					<td>  Password  </td>
+					<td> <input type="password" name ="pwd" /> </td>
+				</tr>
+				<tr>
+					<td>  Age  </td>
+					<td> <input type="number" name ="age" min="0" max="99"  /> </td>
+				</tr>
+				<tr>
+					<td>  Phone  </td>
+					<td> <input type="tel" name ="phone"  /> </td>
+				</tr>
+				<tr>
+					<td>  Retype Password </td>
+					<td> <input type="text" name ="repwd" /> </td>
+				</tr>
+				<tr>
+					<td> Gender </td>
+					<td> <input type="radio" name ="gender" value ="male"/> M  &nbsp; &nbsp; 
+						 <input type="radio" name="gender" value ="female"/> F</td>
+				</tr>
+				<tr>
+					<td> Hobbies </td>
+					<td> <input type = "checkbox" checked name="hobbies" value ="cricket"/> Cricket
+						 <input type = "checkbox"  name="hobbies" value="football"/> football </td>
+				</tr>
+				<tr>
+					<td> Qualification </td>
+					<td> <select name ="qualification">
+										<option value ="select"> Select</option>
+										<option value ="msc"> Msc</option>
+										<option value ="bsc"> Bsc</option>
+										<option value ="mtech"> Mtech</option>
+										<option value ="btech"> Btech</option>
+									</select> 
+					</td>
+				</tr>
+				<tr>
+					<td> Date </td>
+					<td><input type="date" name="date" min="2010-01-01"  max="2020-01-01" value="">  </td>
+				</tr>
+				<tr>
+					<td> Week </td>
+					<td><input type="week" name="week" /></td>
+				</tr>
+				<tr>
+					<td> Month </td>
+					<td><input type="month" name="month" /></td>
+				</tr>
+				<tr>
+					<td>Color</td>
+					<td><input type="color" name="color"/></td>
+				</tr>
+				<tr align ="center">
+					<td > <input type="submit" name="submit"value="Submit"> </td>
+					<td> <input type="submit" name="reset"value="Reset"> </td>
+				</tr>
+			</table>
+		</form>
+	</body>
+
+
+</html>

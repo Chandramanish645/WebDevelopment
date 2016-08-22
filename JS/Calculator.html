@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel ="stylesheet" href="calculator.css">
+	
+	<head>
+	<body>
+		<header>
+			<h1>Calculator</h1>
+		</header>
+		<main>
+				<div class="display">
+					<input type="label" id ="display">
+				</div>
+			<section>
+				
+				<div class="row1">
+					<input type="button" id="one"onclick="getValue('one')" value="1">
+					<input type="button" id="two" onclick="getValue('two')" value="2">
+					<input type="button" id="three" onclick="getValue('three')" value="3">
+				</div>
+				<div class="row2">
+					<input type="button" id="four" onclick="getValue('four')" value="4">
+					<input type="button" id="five" onclick="getValue('five')" value="5">
+					<input type="button" id="six" onclick="getValue('six')" value="6">
+				</div>
+				<div class="row3">
+					<input type="button" id="seven" onclick="getValue('seven')" value="7">
+					<input type="button" id="eight" onclick="getValue('eight')" value="8">
+					<input type="button" id="nine" onclick="getValue('nine')" value="9">
+				</div>
+			</section>
+			<aside>
+				<div class="OperationRow1">
+					<input type="button" id ="sum" onclick="getOperator(id)" value="Sum">
+					<input type="button" id ="sub" onclick="getOperator(id)" value="Subtract">
+				</div>
+				<div class="OperationRow2">
+					<input type="button" id="mul" onclick="getOperator(id)" value="Multiply">
+					<input type="button" id="div" onclick="getOperator(id)" value="Division">
+				</div>
+				<div class="OperationRow3" >
+					<input type="button" onclick="evaluate1()" value="Equalls">
+					<input type="button" onclick="reset1()" value="Reset">
+				</div>
+			</aside>
+		</main>
+		
+	</body>
+<script src="calculator.js"></script>
+</html>
